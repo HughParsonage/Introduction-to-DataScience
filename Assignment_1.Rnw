@@ -1,0 +1,54 @@
+\documentclass{article}
+
+\title{Week 1 assessment}
+
+\renewcommand\labelenumi{\thesection.\arabic{enumi}\hfil}
+
+<<setup, include=FALSE>>= 
+knit_hooks$set(inline = function(x) { 
+  if (is.numeric(x)) return(knitr:::format_sci(x, 'latex')) 
+  knitr:::hi_latex(x) 
+}) 
+@
+
+
+\begin{document}
+\maketitle
+\section{Getting help}
+<<preamble, echo=FALSE>>=
+knitr::opts_chunk$set(echo=TRUE,
+                      eval=FALSE,
+                      warning=FALSE,
+                      message=FALSE)
+@
+
+\begin{enumerate}
+\item What would you do if you wanted to find out what a function does?
+\item What would you do if you wanted to work out how to do something in R?
+\item What are the best practices for getting help from someone?
+\end{enumerate}
+
+\section{Assignment}
+\begin{enumerate}
+\item Assign a vector to the object \texttt{x}. 
+\begin{enumerate}
+\item What storage mode is it? (Place this as a comment)
+\item Assign \texttt{l} to be \texttt{x}'s length.
+\item Assign \texttt{x.1a} to be \texttt{x}'s first element. 
+\item Assign \texttt{x.1b} to be \texttt{x}'s first element as well, but do it in a different way.
+\item Write a line of code that verifies \texttt{x.1a} and \texttt{x.1b} are equal.
+\item Assign \texttt{x.2} to be every second element of \texttt{x}.
+\item Assign \texttt{x.n} to be every element of \texttt{x} that has an unambiguous numeric representation. Comment what you interpret ``unambiguous numeric representation to mean''.
+\item Concisely express how many elements of \texttt{x} are whole numbers. (Look at \texttt{?is.integer}, especially the end of the help file).
+\end{enumerate}
+\item What is the difference between \verb"<-" and \verb"=" in assignment?
+\end{enumerate}
+
+\section{IO}
+\begin{enumerate}
+\item 
+\end{enumerate}
+
+
+
+\end{document}
